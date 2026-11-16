@@ -1,0 +1,22 @@
+{
+  "$schema": "https://clshortfuse.github.io/renodx/renodx-metadata-schema.json",
+  "id": "obenseuer",
+  "title": "Obenseuer",
+  "status": "experimental",
+  "compatibility": "in-progress",
+  "summary": "Experimental Obenseuer HDR10 support: HDR10/PQ swapchain, RenoDRT upgrade of the game's graded SDR output, and display white calibration.",
+  "notes": [
+    "In development: validated gameplay SDR/HDR10 pair; title and gameplay shader paths covered.",
+    "The swapchain stays HDR10 for both content modes; SDR content is left in SDR range, matching the generic Unity addon.",
+    "The Linux build requires clang-cl with the Microsoft ABI; MinGW's structure-return ABI is incompatible with ReShade. Load only this game addon during validation."
+  ],
+  "deploy": {
+    "game_exe": "Obenseuer.exe",
+    "process_name": "Obenseuer",
+    "api": "d3d11",
+    "steam_appid": 951240,
+    "architecture": [
+      "x64"
+    ]
+  }
+}
